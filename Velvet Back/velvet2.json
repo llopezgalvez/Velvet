@@ -1,0 +1,558 @@
+{
+	"info": {
+		"_postman_id": "b3da9c11-bf74-47fb-ae76-90bce7cfe7c9",
+		"name": "Velvet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34722836"
+	},
+	"item": [
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "numberOfAdults",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "numberOfChildren",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "numberOfPets",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amountOfRooms",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{room/}}add",
+							"host": [
+								"{{baseURL}}{{room/}}add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "numberOfAdults",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "numberOfChildren",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "numberOfPet",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{room/}}update/",
+							"host": [
+								"{{baseURL}}{{room/}}update"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseURL}}{{room/}}delete/",
+							"host": [
+								"{{baseURL}}{{room/}}delete"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseURL}}{{room/}}search",
+							"host": [
+								"{{baseURL}}{{room/}}search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{room/}}list",
+							"host": [
+								"{{baseURL}}{{room/}}list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rewiew",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "starts",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{rewiew/}}add",
+							"host": [
+								"{{baseURL}}{{rewiew/}}add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uodate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "stars",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{rewiew/}}update/",
+							"host": [
+								"{{baseURL}}{{rewiew/}}update"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseURL}}{{rewiew/}}delete/",
+							"host": [
+								"{{baseURL}}{{rewiew/}}delete"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "typeEvent",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amountOfRooms",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{event/}}add",
+							"host": [
+								"{{baseURL}}{{event/}}add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{event/}}delete/",
+							"host": [
+								"{{baseURL}}{{event/}}delete"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "typeEvent",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "servicesAdditional",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{event/}}update/",
+							"host": [
+								"{{baseURL}}{{event/}}update"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{event/}}list",
+							"host": [
+								"{{baseURL}}{{event/}}list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{event/}}search",
+							"host": [
+								"{{baseURL}}{{event/}}search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "methodOfPay",
+			"item": [
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseURL}}{{methodOfPay/}}list",
+							"host": [
+								"{{baseURL}}{{methodOfPay/}}list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{methodOfPay/}}delete/",
+							"host": [
+								"{{baseURL}}{{methodOfPay/}}delete"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cardHolder",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "cardNumber",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "securityCode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "expirationDate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "userId",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "reservation",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{methodOfPay/}}add",
+							"host": [
+								"{{baseURL}}{{methodOfPay/}}add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "localhost:2880",
+			"type": "string"
+		},
+		{
+			"key": "rewiew/",
+			"value": "rewiew/",
+			"type": "string"
+		},
+		{
+			"key": "room/",
+			"value": "room/",
+			"type": "string"
+		},
+		{
+			"key": "methodOfPay/",
+			"value": "methodOfPay",
+			"type": "string"
+		},
+		{
+			"key": "event/",
+			"value": "event/",
+			"type": "string"
+		}
+	]
+}

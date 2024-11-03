@@ -1,0 +1,79 @@
+/*.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+}
+.card-body{
+    background-color: rgb(238, 247, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirmation{
+    margin-top: 1em;
+}
+
+.txtConfirmation{
+    margin-left: 1em;
+}
+
+.entries{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-reservation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col-md-6{
+    width: 100%;
+}
+
+form{
+    margin-top: 1em;
+    padding: 1em;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(205, 232, 229);
+}
+
+.dates{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.buttons button{
+    margin: 2em;
+}

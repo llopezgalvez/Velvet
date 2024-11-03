@@ -1,0 +1,47 @@
+.room-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.room-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.room-card:hover img {
+    opacity: 0.3;
+}
+
+.room-card .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure button is above the image */
+}
+
+.room-card:hover .btn {
+    opacity: 1;
+}
+
+.room-card .price {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    z-index: 1; /* Ensure price is above the image */
+}

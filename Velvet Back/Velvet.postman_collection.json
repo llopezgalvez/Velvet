@@ -1,0 +1,617 @@
+{
+	"info": {
+		"_postman_id": "67b80d1d-e154-46e1-b701-4193c82c26fd",
+		"name": "Velvet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34723440",
+		"_collection_link": "https://planetary-shuttle-401033.postman.co/workspace/My-Workspace~3eaa91d6-d093-4756-88dc-75fb8c33bc0c/collection/34723440-67b80d1d-e154-46e1-b701-4193c82c26fd?action=share&source=collection_link&creator=34723440"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ca",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "V",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12344560",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sad@kd",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{user}}newuser",
+							"host": [
+								"{{baseURL}}{{user}}newuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{user}}login",
+							"host": [
+								"{{baseURL}}{{user}}login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{category}}addCategory",
+							"host": [
+								"{{baseURL}}{{category}}addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{category}}updateCategory",
+							"host": [
+								"{{baseURL}}{{category}}updateCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{category}}deleteCategory/",
+							"host": [
+								"{{baseURL}}{{category}}deleteCategory"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{category}}listCategories",
+							"host": [
+								"{{baseURL}}{{category}}listCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{category}}searchCategory",
+							"host": [
+								"{{baseURL}}{{category}}searchCategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "stars",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "wifi",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "petFriendly",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pool_Spa",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "gym",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "daily_Housekeeping",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{hotel}}add",
+							"host": [
+								"{{baseURL}}{{hotel}}add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "stars",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "wifi",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "petFriendly",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pool_Spa",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "gym",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "daily_Housekeeping",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{hotel}}update",
+							"host": [
+								"{{baseURL}}{{hotel}}update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{hotel}}delete/",
+							"host": [
+								"{{baseURL}}{{hotel}}delete"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{hotel}}list",
+							"host": [
+								"{{baseURL}}{{hotel}}list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "roomId",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "methodOfPay",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{reservation}}add",
+							"host": [
+								"{{baseURL}}{{reservation}}add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "roomId",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "methodOfPay",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{reservation}}delete/",
+							"host": [
+								"{{baseURL}}{{reservation}}delete"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{reservation}}list",
+							"host": [
+								"{{baseURL}}{{reservation}}list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{reservation}}search",
+							"host": [
+								"{{baseURL}}{{reservation}}search"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "generated",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "details",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}{{invoice}}generate/",
+							"host": [
+								"{{baseURL}}{{invoice}}generate"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "display",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}{{invoice}}display",
+							"host": [
+								"{{baseURL}}{{invoice}}display"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "localhost:2880/",
+			"type": "string"
+		},
+		{
+			"key": "user",
+			"value": "user/",
+			"type": "string"
+		},
+		{
+			"key": "category",
+			"value": "category/",
+			"type": "string"
+		},
+		{
+			"key": "hotel",
+			"value": "hotel/",
+			"type": "string"
+		},
+		{
+			"key": "reservation",
+			"value": "reservation/",
+			"type": "string"
+		},
+		{
+			"key": "invoice",
+			"value": "invoice/",
+			"type": "string"
+		}
+	]
+}

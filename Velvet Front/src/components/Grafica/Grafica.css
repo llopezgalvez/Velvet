@@ -1,0 +1,24 @@
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subcontainer {
+    width: 800px;
+    height: 400px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Arial, sans-serif';
+    color: #4a90e2; 
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
